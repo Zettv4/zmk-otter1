@@ -43,6 +43,7 @@
         prtsc {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <31 13 12>;
+            layers = <0>;
         };
 
         home {
