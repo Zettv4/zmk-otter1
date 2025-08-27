@@ -1,14 +1,15 @@
 #include "otter.dtsi"
 
 / {
-    kscan_dongle: kscan_dongle {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &physical_layout_otter;        
+    };
+
+    mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
         events = <0>;
     };
-};
-
-&physical_layout_otter {
-    kscan = <&kscan_dongle>;
 };
