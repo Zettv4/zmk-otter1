@@ -22,6 +22,7 @@ include:
 
   - board: nice_nano_v2
     shield: otter_left
+    snippet: zmk-usb-logging
     cmake-args: >
      -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
      -DCONFIG_ZMK_SPLIT=y 
@@ -38,6 +39,7 @@ include:
 
   - board: nice_nano_v2
     shield: otter_right
+    snippet: zmk-usb-logging
     cmake-args: >
      -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
      -DCONFIG_ZMK_SPLIT=y 
