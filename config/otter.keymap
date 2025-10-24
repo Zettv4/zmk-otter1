@@ -7,7 +7,7 @@
 
         alt_r {
             bindings = <&alt_R>;
-            key-positions = <11 12 11 12 11 12 11 12 10>;
+            key-positions = <11 12 11 12 11 12 11 12 13>;
         };
 
         tab {
