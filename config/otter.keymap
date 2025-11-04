@@ -7,9 +7,8 @@
 
         alt_r {
             bindings = <&alt_r>;
-            key-positions = <11 12 31>;
+            key-positions = <11 12 30>;
             layers = <0>;
-            timeout-ms = <35>;
         };
 
         tab {
