@@ -7,20 +7,23 @@
 
         alt_r {
             bindings = <&alt_r>;
-            key-positions = <11 12 11 12 11 12 11 12 31>;
+            key-positions = <11 12 31>;
             layers = <0>;
+            timeout-ms = <35>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <21 22>;
             layers = <0 3 4>;
+            timeout-ms = <35>;
         };
 
         shift_6 {
             bindings = <&kp CARET>;
             key-positions = <6 7>;
             layers = <2>;
+            timeout-ms = <35>;
         };
 
         at {
