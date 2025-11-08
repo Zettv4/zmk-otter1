@@ -14,7 +14,7 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <21 22>;
-            layers = <0 3 4>;
+            layers = <0>;
             timeout-ms = <35>;
         };
 
@@ -48,22 +48,8 @@
 
         prtsc {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <31 21 22>;
+            key-positions = <21 22 20>;
             layers = <0>;
-            timeout-ms = <35>;
-        };
-
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <12 13>;
-            layers = <1>;
-            timeout-ms = <35>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <22 23>;
-            layers = <1>;
             timeout-ms = <35>;
         };
 
@@ -118,19 +104,19 @@
 
         nav_numbers {
             bindings = <
-&none  &none  &none     &none         &none      &none      &kp N9  &kp N8  &kp N7  &none
-&none  &none  &kp LEFT  &kp RIGHT     &none      &kp N0     &kp N3  &kp N2  &kp N1  &none
-&none  &none  &kp DOWN  &kp UP_ARROW  &none      &none      &kp N6  &kp N5  &kp N4  &none
-                        &trans        &kp SPACE  &kp RCTRL  &trans
+&none     &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &none      &none      &kp N9        &kp N8  &kp N7        &none
+&kp HOME  &kp END         &kp LEFT          &kp RIGHT     &none      &none      &kp N3        &kp N2  &kp N1        &kp KP_NUMBER_0
+&none     &none           &kp DOWN          &kp UP_ARROW  &none      &none      &kp NUMBER_4  &kp N5  &kp NUMBER_6  &none
+                                            &trans        &kp SPACE  &kp RCTRL  &trans
             >;
         };
 
         frow_symbols {
             bindings = <
-&none  &kp F7  &kp F8  &kp F9        &kp F12  &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp POUND        &tog 3
-&none  &kp F1  &kp F2  &kp F3        &kp F10  &kp MINUS             &kp SEMICOLON         &kp SQT                &kp ASTERISK     &kp KP_SLASH
-&none  &kp F4  &kp F5  &kp F6        &kp F11  &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp QUESTION
-                       &kp LEFT_ALT  &none    &kp LEFT_SHIFT        &trans
+&kp F12  &kp F7  &kp F8  &kp F9    &none       &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp POUND        &tog 3
+&kp F10  &kp F1  &kp F2  &kp F3    &none       &kp MINUS             &kp SEMICOLON         &kp SQT                &kp ASTERISK     &kp KP_SLASH
+&kp F11  &kp F4  &kp F5  &kp F6    &none       &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp QUESTION
+                         &kp LALT  &kp LSHIFT  &none                 &trans
             >;
         };
 
